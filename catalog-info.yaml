@@ -1,0 +1,22 @@
+# Software catalogue record (Backstage format, backstage.io/docs/features/software-catalog/descriptor-format).
+# GitHub topics mirror this file: website, system-simulators, domain-publishing. Defines the simulators system.
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: risk-return-simulator
+  description: "Risk-return simulator (public web app)."
+  tags: [website]
+spec:
+  type: website
+  lifecycle: production
+  owner: group:publishing
+  system: simulators
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: simulators
+  description: "Public interactive simulators: risk-return, Chad 2030, stochastic course."
+spec:
+  owner: group:publishing
+  domain: publishing
